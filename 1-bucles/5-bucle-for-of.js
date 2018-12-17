@@ -33,3 +33,14 @@ let gente = [{
         edad: 10
     },
 ]
+
+var i =0;
+var mayores = [];
+
+for(var value of gente){
+    if(value.nombre[0]=== 'J'){
+        mayores[i] = value;
+    }
+    i++;
+}
+console.log(mayores);

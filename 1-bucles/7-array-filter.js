@@ -35,3 +35,14 @@ let gente = [{
     },
 ]
 
+var i =0;
+var mayores = [];
+
+for(var value of gente){
+    if(value.nombre.length=== 4 && value.edad < 40){
+        mayores[i] = value;
+        
+    }
+    i++;
+}
+console.log(mayores);

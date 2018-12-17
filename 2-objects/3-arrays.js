@@ -5,8 +5,7 @@
 
 
 // Aquí tu código
-
-
+var arr =[{name:'pepito',age:25},{name:'pepito',age:15},{name:'J',age:12}];
 // Hasta aquí
 
 // TEST 1
