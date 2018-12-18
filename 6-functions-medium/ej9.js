@@ -11,11 +11,11 @@
 
 // Ha de pasar los test adjuntados.
 
-let extraerAcronimo = (...input) => {
-    let acronimo = '';
-    // Aquí tu código.  Desde aquí:
-   
-    // Hasta aquí.
+function extraerAcronimo(...input) {
+    var acronimo = '';
+    for (var i = 0; i < input.length; i++) {
+        acronimo = acronimo + input[i][0];
+    }
     return acronimo;
 }
 
@@ -24,4 +24,4 @@ let test = require('../test.js');
 
 test(extraerAcronimo, ['Estudiante', 'Del', 'Bootcamp', 'Fullstack', 'Geekshubs'], 'EDBFG');
 test(extraerAcronimo, ['hola', 'caracola'], 'hc');
-test(extraerAcronimo, ['33', '44',' '], '34 ');
+test(extraerAcronimo, ['33', '44', ' '], '34 ');

@@ -10,12 +10,15 @@
 
 // Ha de pasar los test adjuntados.
 
-let transformaArrayEnOtraConSusLongitudes = (arrayDeStrings) => {
-    let arrayDeLongitudes = [];
-    // Aquí tu código.  Desde aquí:
-
-    // Hasta aquí.
-    return arrayDeLongitudes
+function transformaArrayEnOtraConSusLongitudes(arrayjaja){
+    var arrayDeLongitudes = [];
+    if(typeof arrayjaja === 'object' && arrayjaja.length >= 0){
+        arrayDeLongitudes = arrayjaja.map(function(cadenote){
+            return cadenote.length;
+        })    
+        return arrayDeLongitudes;
+    }
+    return 'Debo ser ejecutada con un array';
 }
 
 

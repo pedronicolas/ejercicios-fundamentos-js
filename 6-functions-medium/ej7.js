@@ -9,14 +9,19 @@
 
 // Ha de pasar los test adjuntados.
 
-let sumaDesdeHasta = (desde, hasta) => {
-    let sumatorio = 0;
-    // Aquí tu código.  Desde aquí:
+function sumaDesdeHasta(desde, hasta) {
+    var sumatorio = 0;
+    if (typeof desde && typeof hasta === 'number') {
+        for (let i = desde; i <= hasta; i++ ) {
+            sumatorio = sumatorio + i;
+        }
+        return sumatorio;
+    } else {
+        throw new Error('Debo recibir números');
+    }
 
-    // Hasta aquí.
-    return sumatorio;
+
 }
-
 
 let test = require('../test.js');
 

@@ -12,8 +12,13 @@
 
 // Ha de pasar los test adjuntados.
 
-// Aquí tu código.  Desde aquí:
-const conCuantosParametrosMeHanEjecutado;
+function conCuantosParametrosMeHanEjecutado(...input){
+    var conCuantosParametrosMeHanEjecutado;
+    conCuantosParametrosMeHanEjecutado = input.length;
+    return conCuantosParametrosMeHanEjecutado;
+
+}
+
 // Hasta aquí.
 
 
