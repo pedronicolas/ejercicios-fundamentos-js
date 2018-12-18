@@ -5,11 +5,11 @@
 // devolver el string 'Debo ser ejecutada con un numero'
 
 // Ha de pasar los test adjuntados.
-let convierteString = (numero) => {
-    // Aquí tu código.  Desde aquí:
-
-    
-    // Hasta aquí.
+function convierteString(numero){
+    if(typeof numero === 'number'){
+        return numero + '';
+    }
+    return 'Debo ser ejecutada con un numero';
 }
 
 

@@ -6,11 +6,14 @@
 
 // Ha de pasar los test adjuntados.
 
-let cuentaCaracteres = (texto) => {
-    // Aquí tu código.  Desde aquí:
-   
-    
-    // Hasta aquí.
+function cuentaCaracteres(texto){
+    if(typeof texto === 'string'){
+        if(texto.length === 0){
+            return 0;
+        }
+       return texto.length; 
+    }
+    return 'Debo ser ejecutada con un string';
 }
 
 

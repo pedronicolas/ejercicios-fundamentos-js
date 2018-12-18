@@ -8,10 +8,14 @@
 
 // Ha de pasar los test adjuntados.
 
-let caracterInicial = (texto) => {
-    // Aquí tu código.  Desde aquí:
-    
-    // Hasta aquí.
+function caracterInicial(texto){
+    if(typeof texto === 'string'){
+        if(texto.length === 0){
+            return 'Debo ser ejecutada con un string no vacío'
+        }
+       return texto[0]; 
+    }
+    return 'Debo ser ejecutada con un string';
 }
 
 
